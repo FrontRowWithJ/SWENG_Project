@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.App * {
+  font-family: "Poppins";
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0;
+  border: 0;
+  width: 10vw;
+  margin-top: 1vh;
+  height: 3vh;
+  border-radius: 100vh;
+  font-size: 1.5vmin;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:hover::after {
+  content: "!";
+}
+
+input {
+  height: 3vh;
+  font-size: 1vmin;
+  width: 10vw;
+}
